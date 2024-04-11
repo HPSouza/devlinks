@@ -29,6 +29,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 body * {
@@ -37,7 +38,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0px 24px;
 }
@@ -49,6 +51,8 @@ body * {
 
 #profile img {
   width: 112px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
 
 #profile p {
@@ -74,13 +78,16 @@ body * {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  animation: slide-out 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.2s forwards;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
 #switch span {
   display: block;
   height: 24px;
@@ -142,4 +149,51 @@ footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/*About page */
+
+#about-me-text {
+  width: 100%;
+  max-width: 500px;
+  margin: 200px auto;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  font-weight: 500;
+}
+
+#about-me-text p {
+  font-size: 24px;
+  padding: 12px;
+  word-wrap: break-word;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,7 +9,11 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevLinks - Henrique Souza</title>
+    <title></title>
+    <script src="./script.js"></script>
+    <script>
+      document.title = defaultTitle
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,33 +28,30 @@
       </div>
       <ul>
         <li>
-          <a href="#">Inscrever-se no NLW</a>
+          <a id="about_me" href="aboutme.html">Sobre mim</a>
         </li>
         <li>
-          <a href="#">Baixar meu ebook</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Ver meu portifólio</a>
-        </li>
-        <li>
-          <a href="#">Conheça o Explorer</a>
+          <a
+            id="view_portfolio"
+            href="https://github.com/HPSouza?tab=repositories"
+            target="_blank"
+            >Ver meu portifólio</a
+          >
         </li>
       </ul>
       <div id="social-links">
-        <a href="" target="_blank">
+        <a href="https://github.com/HPSouza" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
         </a>
         <a href="https://www.instagram.com/_hpsouza" target="_blank">
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <a href="" target="_blank">
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a>
+
         <a href="https://www.linkedin.com/in/henriquesouzaa/" target="_blank">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
       </div>
-      <footer>Feito por Henrique Pereira Souza</footer>
+      <footer id="made_by">Feito por Henrique Pereira Souza</footer>
     </div>
     <script
       type="module"
@@ -60,8 +61,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./script.js"></script>
   </body>
 </html>
-<!-- Escrever um sobre mim, Ver meu portifólio, deixar um acesso ao currículo -->
-<!-- O blank é para que ele abra uma nova aba com o link -->
