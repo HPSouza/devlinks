@@ -181,10 +181,16 @@ footer {
 
 /*About page */
 
+#container-about-me-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 #about-me-text {
   width: 100%;
-  max-width: 500px;
-  margin: 200px auto;
+  max-width: 488px;
+  margin: auto;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
