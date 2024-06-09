@@ -20,7 +20,7 @@ function toogleMode() {
 
 document.addEventListener("DOMContentLoaded", function () {
   var deviceLanguage = getDeviceLanguage()
-  if (deviceLanguage.includes("en-")) loadTranslations("en-US")
+  if (!deviceLanguage.includes("pt-")) loadTranslations("en-US")
 
   if (localStorage.getItem("isLightMode") === "true") {
     const html = document.documentElement

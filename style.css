@@ -189,7 +189,7 @@ footer {
 
 #about-me-text {
   width: 100%;
-  max-width: 488px;
+  max-width: 50%;
   margin: auto;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
